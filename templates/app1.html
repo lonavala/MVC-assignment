@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+  <h4>Upload your file here</h4>
+  <form action="/home" method="post" enctype = "multipart/form-data">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+   {{message}}
+   {% if message %}
+      <a href="/json">Want in json format</a>
+   {% endif %}
+</form>
+</body>
+</html>
